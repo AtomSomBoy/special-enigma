@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header section that shows the title of the application -->
+    <header>
+        <h1>Task Management Application</h1>
+    </header>
+
+    <!-- Main content area where tasks are added and viewed -->
+    <main>
+        <section id="task-form">
+            <h2>Add New Task</h2>
+            <!-- Form to add a new task with inputs for name, description, and due date -->
+            <form id="taskForm">
+                <label for="taskName">Task Name:</label>
+                <input type="text" id="taskName" name="taskName" required>
+
+                <label for="taskDescription">Task Description:</label>
+                <textarea id="taskDescription" name="taskDescription" rows="4" required></textarea>
+
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate" name="dueDate" required>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <!-- Section to display the list of tasks added by the user -->
+        <section id="task-list">
+            <h2>Task List</h2>
+            <ul id="tasks">
+                <!-- Tasks will be dynamically added here using JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- JavaScript file that controls the behavior of the application -->
+    <script src="app.js"></script>
+</body>
+
+</html>
